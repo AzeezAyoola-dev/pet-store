@@ -208,6 +208,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: var(--semantic-spacing-lg);
+  min-width: 0;
 }
 
 .hero-title {
@@ -243,6 +244,7 @@ input {
 
 .search-input-field {
   flex: 1;
+  min-width: 0;
   font-size: var(--typography-body-default-font-size);
   color: var(--semantic-color-text-body);
   background: transparent;
@@ -959,7 +961,7 @@ input {
    ========================================================================== */
 @media (max-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     text-align: center;
   }
   .hero-content {
