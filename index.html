@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lizard Pet Store - Top Quality Products for Your Pets</title>
+  <meta name="description" content="Shop by pet, brand or products on sale. The best place to buy top quality food, treats, toys, and supplies for dogs, cats, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="site-container nav-wrapper">
+      <a href="#site-header" class="brand-logo" aria-label="Lizard Pet Store Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="9" cy="11" rx="3.5" ry="5" fill="currentColor" transform="rotate(-15 9 11)"/>
+          <ellipse cx="23" cy="11" rx="3.5" ry="5" fill="currentColor" transform="rotate(15 23 11)"/>
+          <ellipse cx="16" cy="7" rx="3.5" ry="5.5" fill="currentColor"/>
+          <path d="M16 13C10.5 13 8 16.5 8 20.5C8 24.5 11 26 16 26C21 26 24 24.5 24 20.5C24 16.5 21.5 13 16 13Z" fill="currentColor"/>
+          <path d="M26 4L27 6.5L29.5 7.5L27 8.5L26 11L25 8.5L22.5 7.5L25 6.5L26 4Z" fill="var(--semantic-color-cta-primary)"/>
+        </svg>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#categories" class="nav-link">CATEGORIES</a>
+        <a href="#blog" class="nav-link">BLOG</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Search Store" id="btn-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Shopping Cart" id="btn-cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="User Account" id="btn-account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="site-container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            The best place to buy top quality products for your pets
+          </h1>
+          <p class="hero-subtitle">
+            Shop by pet, brand or products on sale!
+          </p>
+          <form class="hero-search-wrapper" role="search">
+            <input 
+              type="text" 
+              class="search-input-field" 
+              placeholder="What are you looking for?" 
+              aria-label="Search pet products"
+              required
+            >
+            <button type="submit" class="search-submit-btn" id="btn-hero-search">
+              Search
+            </button>
+          </form>
+        </div>
+
+        <div class="hero-media-wrapper">
+          <div class="hero-arch-container">
+            <img 
+              src="assets/hero-dog.jpg" 
+              alt="Adorable fluffy dog wearing a patterned blue sweater" 
+              class="hero-pet-image"
+              loading="eager"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories" aria-labelledby="categories-heading">
+      <div class="site-container">
+        <h2 class="section-heading-centered" id="categories-heading">Categories</h2>
+
+        <div class="categories-grid">
+          <article class="category-card category-card--dogs" tabindex="0">
+            <span class="category-name">Dogs</span>
+            <div class="category-image-wrap">
+              <img src="assets/category-dogs.png" alt="Jack Russell Terrier for Dogs category" class="category-image" loading="lazy">
+            </div>
+          </article>
+
+          <article class="category-card category-card--cats" tabindex="0">
+            <span class="category-name">Cats</span>
+            <div class="category-image-wrap">
+              <img src="assets/category-cats.png" alt="Persian cat for Cats category" class="category-image" loading="lazy">
+            </div>
+          </article>
+
+          <article class="category-card category-card--fish" tabindex="0">
+            <span class="category-name">Fish</span>
+            <div class="category-image-wrap">
+              <img src="assets/category-fish.png" alt="Betta fish for Fish category" class="category-image" loading="lazy">
+            </div>
+          </article>
+
+          <article class="category-card category-card--birds" tabindex="0">
+            <span class="category-name">Birds</span>
+            <div class="category-image-wrap">
+              <img src="assets/category-birds.png" alt="Blue roller bird for Birds category" class="category-image" loading="lazy">
+            </div>
+          </article>
+
+          <article class="category-card category-card--small" tabindex="0">
+            <span class="category-name">Small Pets</span>
+            <div class="category-image-wrap">
+              <img src="assets/category-small-pets.png" alt="Guinea pig for Small Pets category" class="category-image" loading="lazy">
+            </div>
+          </article>
+
+          <article class="category-card category-card--reptiles" tabindex="0">
+            <span class="category-name">Reptiles</span>
+            <div class="category-image-wrap">
+              <img src="assets/category-reptiles.png" alt="Chameleon for Reptiles category" class="category-image" loading="lazy">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content: Special Offers & Trending Products -->
+    <section class="store-main-layout" aria-label="Featured Pet Offers and Trending Products">
+      <div class="site-container store-grid-container">
+        
+        <!-- Left Column: Special Offers Sidebar -->
+        <aside class="special-offers-sidebar" aria-label="Special Offers">
+          <div class="pill-header-card">
+            <div class="pill-header-title">
+              <svg class="pill-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 12v10H4V12"></path>
+                <path d="M2 7h20v5H2z"></path>
+                <path d="M12 22V7"></path>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+              </svg>
+              <span>Special Offers</span>
+            </div>
+          </div>
+
+          <!-- Blue Special Offer Card -->
+          <article class="special-offer-card blue-theme">
+            <h3 class="offer-card-heading">Dog Treats</h3>
+            <span class="offer-card-subtitle">by Dr. Diggy</span>
+            
+            <div class="offer-avatar-wrap">
+              <img src="assets/special-dog-yellow.jpg" alt="Happy dog for Dr. Diggy dog treats" class="offer-avatar-img" loading="lazy">
+              <div class="offer-discount-badge" aria-label="30 percent off discount">
+                <span>30%</span>
+                <span>OFF</span>
+              </div>
+            </div>
+
+            <button class="offer-action-btn btn-blue" id="btn-shop-diggy">Shop now</button>
+          </article>
+
+          <!-- Purple Special Offer Card -->
+          <article class="special-offer-card purple-theme">
+            <h3 class="offer-card-heading">Dog Treats</h3>
+            <span class="offer-card-subtitle">by Dr. Wagg</span>
+            
+            <div class="offer-avatar-wrap">
+              <img src="assets/special-dog-purple.jpg" alt="Friendly dog for Dr. Wagg dog treats" class="offer-avatar-img" loading="lazy">
+              <div class="offer-discount-badge" aria-label="30 percent off discount">
+                <span>30%</span>
+                <span>OFF</span>
+              </div>
+            </div>
+
+            <button class="offer-action-btn btn-purple" id="btn-shop-wagg">Shop now</button>
+          </article>
+
+          <!-- Flash Sale Navy Countdown Card -->
+          <div class="flash-sale-card" role="region" aria-label="Flash Sale Countdown">
+            <span class="flash-sale-badge">FLASH SALE</span>
+            <span class="flash-sale-timer-label">Ends in:</span>
+            <div class="countdown-boxes">
+              <div class="timer-box" id="timer-hours">1</div>
+              <div class="timer-box" id="timer-mins">0</div>
+              <div class="timer-box" id="timer-secs">5</div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right Column: Trending Products & Favourite Categories -->
+        <div class="trending-products-column">
+          <!-- Trending Products Pill Bar -->
+          <div class="pill-header-card">
+            <div class="pill-header-title">
+              <svg class="pill-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>Trending Products</span>
+            </div>
+            <div class="carousel-nav-arrows">
+              <button class="arrow-btn carousel-prev" aria-label="Previous Products">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button class="arrow-btn carousel-next" aria-label="Next Products">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Grid: 6 Products -->
+          <div class="products-grid">
+            <!-- Product 1 -->
+            <article class="product-card">
+              <div class="product-image-container">
+                <img src="assets/product-puppy.jpg" alt="Golden puppy product" class="product-image" loading="lazy">
+              </div>
+              <div class="product-info">
+                <h4 class="product-title">Product Name</h4>
+                <div class="product-meta-row">
+                  <div class="price-group">
+                    <span class="current-price">$15.99</span>
+                    <span class="original-price">$19.99</span>
+                  </div>
+                  <button class="favorite-btn" aria-label="Add Product Name to Favorites">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+              <div class="product-image-container">
+                <img src="assets/product-puppy.jpg" alt="Golden puppy product" class="product-image" loading="lazy">
+              </div>
+              <div class="product-info">
+                <h4 class="product-title">Product Name</h4>
+                <div class="product-meta-row">
+                  <div class="price-group">
+                    <span class="current-price">$15.99</span>
+                    <span class="original-price">$19.99</span>
+                  </div>
+                  <button class="favorite-btn" aria-label="Add Product Name to Favorites">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+              <div class="product-image-container">
+                <img src="assets/product-puppy.jpg" alt="Golden puppy product" class="product-image" loading="lazy">
+              </div>
+              <div class="product-info">
+                <h4 class="product-title">Product Name</h4>
+                <div class="product-meta-row">
+                  <div class="price-group">
+                    <span class="current-price">$15.99</span>
+                    <span class="original-price">$19.99</span>
+                  </div>
+                  <button class="favorite-btn" aria-label="Add Product Name to Favorites">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+              <div class="product-image-container">
+                <img src="assets/product-puppy.jpg" alt="Golden puppy product" class="product-image" loading="lazy">
+              </div>
+              <div class="product-info">
+                <h4 class="product-title">Product Name</h4>
+                <div class="product-meta-row">
+                  <div class="price-group">
+                    <span class="current-price">$21.95</span>
+                    <span class="original-price">$25.50</span>
+                  </div>
+                  <button class="favorite-btn" aria-label="Add Product Name to Favorites">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card">
+              <div class="product-image-container">
+                <img src="assets/product-puppy.jpg" alt="Golden puppy product" class="product-image" loading="lazy">
+              </div>
+              <div class="product-info">
+                <h4 class="product-title">Product Name</h4>
+                <div class="product-meta-row">
+                  <div class="price-group">
+                    <span class="current-price">$21.95</span>
+                    <span class="original-price">$25.50</span>
+                  </div>
+                  <button class="favorite-btn" aria-label="Add Product Name to Favorites">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card">
+              <div class="product-image-container">
+                <img src="assets/product-puppy.jpg" alt="Golden puppy product" class="product-image" loading="lazy">
+              </div>
+              <div class="product-info">
+                <h4 class="product-title">Product Name</h4>
+                <div class="product-meta-row">
+                  <div class="price-group">
+                    <span class="current-price">$21.95</span>
+                    <span class="original-price">$25.50</span>
+                  </div>
+                  <button class="favorite-btn" aria-label="Add Product Name to Favorites">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Favourite Categories Pill Bar -->
+          <div class="pill-header-card">
+            <div class="pill-header-title">
+              <svg class="pill-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Favourite Categories</span>
+            </div>
+          </div>
+
+          <!-- Promo Banners: Pink & Teal Cat Food -->
+          <div class="promo-banners-grid">
+            <!-- Banner 1: Pink Theme -->
+            <article class="promo-banner-card pink-theme">
+              <div class="promo-content">
+                <h4 class="promo-title">Canned cat food</h4>
+                <p class="promo-desc">Buy a canned food and get much more</p>
+                <button class="promo-btn" id="btn-promo-pink">Add to cart</button>
+              </div>
+              <div class="promo-image-container">
+                <img src="assets/promo-cat-pink.jpg" alt="Canned cat food bowls" class="promo-image" loading="lazy">
+              </div>
+            </article>
+
+            <!-- Banner 2: Teal Theme -->
+            <article class="promo-banner-card teal-theme">
+              <div class="promo-content">
+                <h4 class="promo-title">Canned cat food</h4>
+                <p class="promo-desc">Buy a canned food and get much more</p>
+                <button class="promo-btn" id="btn-promo-teal">Add to cart</button>
+              </div>
+              <div class="promo-image-container">
+                <img src="assets/promo-cat-blue.jpg" alt="Playful cat with canned food" class="promo-image" loading="lazy">
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Read Our Blog Section -->
+    <section class="blog-section" id="blog" aria-labelledby="blog-heading">
+      <div class="site-container">
+        <h2 class="section-heading-centered" id="blog-heading">Read our blog</h2>
+
+        <div class="blog-grid">
+          <!-- Blog Card 1 -->
+          <article class="blog-card">
+            <div class="blog-image-wrapper">
+              <img src="assets/product-puppy.jpg" alt="Golden puppy grooming tips" class="blog-image" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <h3 class="blog-post-title">5 Tips on How to Make your Dog's Fur Healthy and Shiny</h3>
+              <p class="blog-excerpt">In this article, we will give you 10+ advice to help you make the fur of your dog round and shiny.</p>
+              <div class="blog-author-row">
+                <img src="assets/author-dr-may.jpg" alt="Dr. May" class="author-avatar" loading="lazy">
+                <span class="author-name">Dr. May</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="blog-card">
+            <div class="blog-image-wrapper">
+              <img src="assets/promo-cat-blue.jpg" alt="Cat care grooming article" class="blog-image" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <h3 class="blog-post-title">How to Keep your Cat Happy and Healthy Indoors</h3>
+              <p class="blog-excerpt">Cats thrive in the right environment. Here are our top tips to ensure your indoor cat is living its best life.</p>
+              <div class="blog-author-row">
+                <img src="assets/author-dr-sarah.jpg" alt="Dr. Sarah" class="author-avatar" loading="lazy">
+                <span class="author-name">Dr. Sarah</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="blog-card">
+            <div class="blog-image-wrapper">
+              <img src="assets/product-puppy.jpg" alt="Puppy nutrition advice" class="blog-image" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <h3 class="blog-post-title">The Best Diet Plan for Your New Puppy's First Year</h3>
+              <p class="blog-excerpt">Nutrition is everything in a puppy's early months. We break down exactly what to feed and when for optimal growth.</p>
+              <div class="blog-author-row">
+                <img src="assets/author-dr-alex.jpg" alt="Dr. Alex" class="author-avatar" loading="lazy">
+                <span class="author-name">Dr. Alex</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer" id="contact">
+    <div class="site-container">
+      <div class="footer-top-grid">
+        <!-- Logo Column -->
+        <div class="footer-brand">
+          <svg class="footer-brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="9" cy="11" rx="3.5" ry="5" fill="currentColor" transform="rotate(-15 9 11)"/>
+            <ellipse cx="23" cy="11" rx="3.5" ry="5" fill="currentColor" transform="rotate(15 23 11)"/>
+            <ellipse cx="16" cy="7" rx="3.5" ry="5.5" fill="currentColor"/>
+            <path d="M16 13C10.5 13 8 16.5 8 20.5C8 24.5 11 26 16 26C21 26 24 24.5 24 20.5C24 16.5 21.5 13 16 13Z" fill="currentColor"/>
+            <path d="M26 4L27 6.5L29.5 7.5L27 8.5L26 11L25 8.5L22.5 7.5L25 6.5L26 4Z" fill="var(--semantic-color-cta-primary)"/>
+          </svg>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-column">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-link-list">
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="footer-column">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-link-list">
+            <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#terms" class="footer-link">Terms and Conditions</a></li>
+            <li><a href="#cookies" class="footer-link">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Links -->
+        <div class="footer-column">
+          <h4 class="footer-col-title">Help</h4>
+          <ul class="footer-link-list">
+            <li><a href="#shipping" class="footer-link">Shipping and Delivery</a></li>
+            <li><a href="#returns" class="footer-link">Returns Policy</a></li>
+            <li><a href="#security" class="footer-link">Security and Payment</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-column">
+          <h4 class="footer-col-title">Social</h4>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" class="social-icon-link" aria-label="Visit Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://x.com" class="social-icon-link" aria-label="Visit X" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">Copyright @ Lizard Pet store 2021</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

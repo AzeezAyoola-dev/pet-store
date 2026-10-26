@@ -1,0 +1,18 @@
+{
+  "name": "pet-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tokens": "node build-tokens.mjs",
+    "tokens": "node build-tokens.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "style-dictionary": "^5.7.1"
+  }
+}
