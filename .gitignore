@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# Large image assets (stored locally, upload manually to GitHub or use CDN)
+assets/
+
 # Environment files
 .env
 .env.local
